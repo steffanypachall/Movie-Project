@@ -1,6 +1,9 @@
+#imports the fresh_tomatoes file which contains the grid details for the page
 import fresh_tomatoes
+#imports my code from my movie.py file
 import movie
 
+#list of movies I lke and it contains the title, description, poster image and trailer
 ip_man = movie.Movie("Ip Man",
                         "A movie based on the grandmaster Ip Man",
                         "http://upload.wikimedia.org/wikipedia/en/thumb/2/2f/Ipmanposter02.jpg/220px-Ipmanposter02.jpg",
@@ -35,6 +38,7 @@ kung_fu_hustle = movie.Movie("Kung Fu Hustle",
                              "http://upload.wikimedia.org/wikipedia/en/thumb/0/00/KungFuHustleHKposter.jpg/220px-KungFuHustleHKposter.jpg",
                              "http://www.youtube.com/watch?v=-m3IB7N_PRk")
 
+# I put the list of movies into an array for the order they should show in.
 movie_list = [ip_man, avatar, mulan, hunger_games, saving_private_ryan, kung_fu_hustle]
 fresh_tomatoes.open_movies_page(movie_list)
 #print (movie.Movie.VALID_RATINGS)
